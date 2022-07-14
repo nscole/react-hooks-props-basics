@@ -6,10 +6,13 @@ function BlogPost() {
   return (
     <div id="blog-post">
       <BlogContent
-        articleText={
+         articleText={
           "Dear Reader: Bjarne Stroustrup has the perfect lecture oration."
-        }
-      />
+         }
+        isPublished={true}
+        minutesToRead={1}
+        /> 
+
       <Comment commentText={"I agree with this statement. - Angela Merkel"} />
       <Comment commentText={"A universal truth. - Noam Chomsky"} />
       <Comment
@@ -20,5 +23,7 @@ function BlogPost() {
     </div>
   );
 }
+
+console.log(BlogContent);
 
 export default BlogPost;
